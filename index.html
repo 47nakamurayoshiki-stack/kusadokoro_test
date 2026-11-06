@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>群馬県のリフォーム・リノベーションはモックの家｜草処建設株式会社</title>
+<meta name="description" content="群馬県のリフォーム・リノベーションは草処建設のモックの家にお任せください。木のぬくもり溢れる住まいづくりで、暮らしのお悩みを解決します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== ヘッダー ========== -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <img src="assets/logo-header.png" alt="モックの家 草処建設株式会社" class="brand__logo">
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header-menu" id="headerMenu">
+      <p class="header-catch">群馬県のリフォーム・リノベーションはお任せください</p>
+      <div class="header-right">
+        <a href="tel:0277741682" class="header-tel__num"><img class="tel-icon" src="assets/icon-tel.png" alt="">0277-74-1682</a>
+        <a href="https://www.kusadokoro.co.jp/inq" class="header-cta">
+          <img src="assets/icon-cta.png" alt="">
+          <span>資料請求・お問い合わせ</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- スクロール追従：PCは補助金バッジのみ(右端固定)、SPは補助金バッジ＋CTAを下部固定バーに並べる -->
+<div class="float-bar">
+  <div class="subsidy-float">
+    <small>今なら、補助金で</small>
+    <span class="num">最大<span class="num-lg">247</span>万円/戸</span>
+    <span class="note">※補助金の適用には条件があります</span>
+  </div>
+  <a href="https://www.kusadokoro.co.jp/inq" class="float-cta">
+    <img class="float-cta__icon" src="assets/icon-cta.png" alt="">
+    <span>資料請求・お問い合わせ</span>
+  </a>
+</div>
+
+<script>
+  const hbBtn = document.getElementById('hamburgerBtn');
+  const hMenu = document.getElementById('headerMenu');
+  hbBtn.addEventListener('click', () => {
+    const open = hMenu.classList.toggle('is-open');
+    hbBtn.classList.toggle('is-open', open);
+    hbBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  hMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    hMenu.classList.remove('is-open');
+    hbBtn.classList.remove('is-open');
+    hbBtn.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+<!-- ========== ヒーロー ========== -->
+<section class="hero">
+  <div class="hero__stage">
+    <div class="hero__after">
+      <img src="assets/hero-after.jpg" alt="リフォーム後のリビング">
+      <span class="badge badge--after">After</span>
+    </div>
+
+    <div class="hero__overlay">
+      <p class="hero__catch">
+        <span class="tag-heading">群馬県のリフォームは、<br>木のぬくもり溢れる<br>モックの家で！</span>
+      </p>
+    </div>
+
+    <div class="hero__before-wrap">
+      <img src="assets/hero-before.jpg" alt="リフォーム前の様子">
+      <span class="badge badge--before">Before</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero__ctawrap">
+      <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+      <a href="#contact" class="btn-cta btn-cta--center">
+        <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+        資料請求・お問い合わせ
+      </a>
+    </div>
+  </div>
+
+  <div class="worry-bubble-wrap">
+    <div class="worry-bubble">
+      <p>老朽化した古い家の不安や不満を</p>
+      <p class="big">リフォームで解消</p>
+      <p>してみませんか？</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== お悩み解決 ========== -->
+<section class="worry section">
+  <div class="container">
+    <h2 class="center">お家のこんなお悩みを解決！</h2>
+
+    <!-- イラスト＋4つのお悩みは1枚の画像で表現。assets/worry-illustration.png を差し替えてください -->
+    <div class="worry-illustration">
+      <img src="assets/worry-illustration.png" alt="お家のお悩み（子供の成長、老朽化、費用、光熱費）">
+    </div>
+
+    <div class="worry-grid">
+      <div class="worry-photo-col left">
+        <div class="worry-photo">
+          <img src="assets/worry-kitchen.jpg" alt="古いキッチン">
+          <p>最新設備のキッチンにしたい・・・</p>
+        </div>
+        <div class="worry-photo">
+          <img src="assets/worry-entrance.jpg" alt="古い玄関">
+          <p>古い玄関を綺麗にしたい・・・</p>
+        </div>
+      </div>
+
+      <div class="worry-center">
+        <span>長く住み続けたい</span>
+        <span class="mid">大事なお家も</span>
+        <span><em class="big">老朽化</em>は</span>
+        <span class="mid">避けられません</span>
+      </div>
+
+      <div class="worry-photo-col right">
+        <div class="worry-photo">
+          <img src="assets/worry-toilet.jpg" alt="古いトイレ">
+          <p>トイレの修繕をしたい・・・</p>
+        </div>
+        <div class="worry-photo">
+          <img src="assets/worry-living.jpg" alt="古いリビング">
+          <p>リビングを快適な空間にしたい・・・</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="risk-row">
+      <h3>老朽化による<span class="underline">耐震性能</span>や<br><span class="underline">断熱性能の低下</span>も<br>大きなリスクになります</h3>
+      <img src="assets/risk-earthquake.jpg" alt="老朽化した家屋">
+    </div>
+  </div>
+</section>
+
+<!-- ========== モックの家はご提案 ========== -->
+<section class="solution section">
+  <div class="container">
+    <img class="solution__bulb" src="assets/icon-lightbulb.png" alt="">
+    <h2>
+      <span class="tag-heading">モックの家は<br>暮らしのお悩みに合わせた<br>リフォームをご提案</span>
+    </h2>
+    <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+    <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center">
+      <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+      資料請求・お問い合わせ
+    </a>
+
+    <div class="craftsman-band">
+      <div class="craftsman">
+        <div class="craftsman__text">
+          <h3>
+            <span class="tag-heading">木を知り、家を愛する職人たち。<br>見えない下地からこだわる<br>確かな品質</span>
+          </h3>
+          <p>弊社は様々なお悩みを持つご家族のため、ご自分の夢を持つ方のため、より良い住まいを手にしたいと思うお客さまのための手助けがしたい。その理念を大事にしております。</p>
+          <p><strong>弊社のスタッフと大工が素材にこだわりながら、「職人精進」の精神で心を込めて施工いたします。</strong></p>
+          <p>些細なお悩みでもお気軽に、お客様の想いをスタッフへぶつけてください。長く快適に暮らせる空間を、形にします。</p>
+        </div>
+        <div class="craftsman__photo">
+          <img src="assets/craftsmen.jpg" alt="職人たち">
+        </div>
+      </div>
+
+      <div class="award">
+        <img src="assets/icon-medal.png" alt="地域密着型 年間60件以上の施工実績">
+        <div>
+          <h4>[職人精進]の精神と積み重ね</h4>
+          <p>地域密着で、年間60件以上の住まいづくり。私たちの家づくりの原点は、企業理念「職人精進」にあります。現場の職人だけでなく社員全員がその精神を共有しており、全員が家を建てることに誇りを持っております。学び、磨き続ける姿勢があってこそ、安心して長く暮らせる住まいを生み出し続けることができました。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+    <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center">
+      <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+      資料請求・お問い合わせ
+    </a>
+  </div>
+</section>
+
+<!-- ========== 新しい暮らしと生活 ========== -->
+<section id="merit" class="newlife section">
+  <div class="container">
+    <h2>[モックの家]リフォームで叶う<br>新しい暮らしと生活</h2>
+    <div class="divider"></div>
+    <p class="lead">新築や建て替えより、賢く、お得に、理想の住まいへ！</p>
+    <p class="chips"><span class="chip">コスト</span>は抑え、<span class="chip">性能</span>も<span class="chip">暮らしやすさ</span>もアップ</p>
+    <div class="newlife__photo">
+      <img src="assets/newlife-main.jpg" alt="新しい暮らし">
+    </div>
+    <p class="section-lead" style="text-align:left; font-weight:400; font-size:1rem; color:var(--color-text-soft); margin-top:24px;">
+      間取り変更や断熱改善、水回りリフォームはもちろん、お子様の成長に合わせた学習スペースの造作や、大切なペットのためのキャットウォークづくりなど、ご家族それぞれの暮らし方に合わせた住まいづくりをご提案します。新築だとご不安な費用も、リフォーム/リノベーションなら費用を抑えて改善ができます。
+    </p>
+    <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+    <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center">
+      <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+      資料請求・お問い合わせ
+    </a>
+
+    <!-- 01 -->
+    <div class="feature">
+      <div class="feature__photo"><img src="assets/feature-01.jpg" alt="お金の不安を解消"></div>
+      <div class="feature__body">
+        <span class="eyebrow-num">01</span>
+        <h3><span class="tag-heading">お金の不安を、<br>納得の選択に変え、<br>新たなお家に変える</span></h3>
+        <p>リノベーションは、新築と比べてコストを抑えやすい住まいづくりです。築年数が長ければ固定資産税の負担が軽くなる傾向があり(減築ならさらに固定資産税が下がります)、さらに国がストック住宅を生かす方針にシフトしたことで、リフォーム・リノベーションの補助金が期待でき、トータルコストを抑えられる可能性があります。</p>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="feature feature--reverse">
+      <div class="feature__photo"><img src="assets/feature-02.jpg" alt="思い出はそのままに"></div>
+      <div class="feature__body">
+        <span class="eyebrow-num">02</span>
+        <h3><span class="tag-heading">思い出はそのままに<br>新しい木のぬくもりを<br>紡ぐ、あなただけの住まい</span></h3>
+        <p>古き良きものは残しながらも、これから住む方の生活スタイルを見極め、最適な住まいをご提案いたします。例えば、思い出の詰まった古民家でも、夏は涼しくても、冬は寒いといった良い点・悪い点が混在します。弊社は、梁・柱・木製建具などは残しつつ、耐震性/耐熱性/間取り変更などの性能は向上させ、デザインにも配慮した新しい住まい方をご提案いたします。</p>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="feature">
+      <div class="feature__photo"><img src="assets/feature-03.jpg" alt="断熱耐震リフォーム"></div>
+      <div class="feature__body">
+        <span class="eyebrow-num">03</span>
+        <h3><span class="tag-heading">群馬の冬も乗り越える<br>地元を知り尽くした<br>断熱/耐震リフォーム</span></h3>
+        <p>リノベーションでも、見た目だけでなく断熱性や耐震性といった「暮らしの安心」に関わる性能を大切にしています。築年数の経つと「このまま住み続けて大丈夫だろうか」と不安に感じる方も多くいらっしゃいます。当社では、有資格者による調査・耐震診断（インスペクション）を行い、そのうえで、一棟ごとに最適な補強・改修をご提案し、安心して暮らせる住まいへと整えます。</p>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="feature feature--reverse">
+      <div class="feature__photo"><img src="assets/feature-04.jpg" alt="木の香りに包まれるリビング"></div>
+      <div class="feature__body">
+        <span class="eyebrow-num">04</span>
+        <h3><span class="tag-heading">帰るたびに、木の香りに<br>包まれる。深呼吸したく<br>なるリビングへ</span></h3>
+        <p>私たちは、自然素材の心地よさと、既存素材の価値を大切にした住まいづくりを行っています。新しく取り入れる建材は、質感や耐久性にこだわり、長く快適に暮らせるものを選定。一方でリノベーションでは、柱や梁、建具など、これまで大切に使われてきた素材をできる限り活かします。新しいものと、これまでの良さを組み合わせることで、時間の積み重ねを感じられる、唯一無二の住まいをつくります。</p>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="feature">
+      <div class="feature__photo"><img src="assets/feature-05.jpg" alt="快適な水回り"></div>
+      <div class="feature__body">
+        <span class="eyebrow-num">05</span>
+        <h3><span class="tag-heading">一日のはじまりも<br>終わりも、気持ちよく<br>過ごせる場所へ</span></h3>
+        <p>水回りは、毎日の「使いやすさ」が暮らしの質を大きく左右します。当社では、キッチン・お風呂・トイレといった設備の更新や入れ替えだけでなく、動線や配置まで見直すことで、家事の負担を軽減し、より快適でストレスの少ない暮らしを実現します。ご家族構成や生活スタイルに合わせた最適なプランをご提案します。</p>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="feature feature--reverse">
+      <div class="feature__photo"><img src="assets/feature-06.jpg" alt="家族の数だけちょうどいい住まい"></div>
+      <div class="feature__body">
+        <span class="eyebrow-num">06</span>
+        <h3><span class="tag-heading">家族の数だけ、<br>ちょうどいい<br>住まいがある</span></h3>
+        <p>住まいのかたちは、ご家族ごとに異なります。中古物件の購入や空き家の活用、実家の住み継ぎなど、様々なリノベーションのご相談が増えています。私たちは地域に根ざした会社として、困ったときにすぐ頼れる存在でありたいと考えています。子どもスペースやキャットウォークの造作など、細かなご要望にも柔軟に対応し、ご家族にとって心地よい住まいづくりをお手伝いします。</p>
+      </div>
+    </div>
+
+    <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+    <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center">
+      <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+      資料請求・お問い合わせ
+    </a>
+  </div>
+</section>
+
+<!-- ========== 施工事例 ========== -->
+<section id="case" class="case section">
+  <div class="container">
+    <h2 class="sec-title">施工事例</h2>
+    <div class="sec-sub">
+      <p class="tag-heading" style="font-size:1.3rem;">暮らしの変化を実感できる施工事例</p>
+      <p style="margin-top:20px;">実際に施工した住まいをご紹介します。<br>暮らしに合わせたリフォームの一例をご覧ください。</p>
+    </div>
+
+    <div class="case-block">
+      <div class="case-block__label"><span>キッチン</span></div>
+      <div class="case-pair">
+        <figure class="before"><img src="assets/case-kitchen-before.jpg" alt="キッチン施工前"><figcaption>Before</figcaption></figure>
+        <figure class="after"><img src="assets/case-kitchen-after.jpg" alt="キッチン施工後"><figcaption>After</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-block__label"><span>リビング</span></div>
+      <div class="case-pair">
+        <figure class="before"><img src="assets/case-living-before.jpg" alt="リビング施工前"><figcaption>Before</figcaption></figure>
+        <figure class="after"><img src="assets/case-living-after.jpg" alt="リビング施工後"><figcaption>After</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-block__label"><span>洋室</span></div>
+      <div class="case-pair">
+        <figure class="before"><img src="assets/case-room-before.jpg" alt="洋室施工前"><figcaption>Before</figcaption></figure>
+        <figure class="after"><img src="assets/case-room-after.jpg" alt="洋室施工後"><figcaption>After</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="case-block">
+      <div class="case-block__label"><span>外観</span></div>
+      <div class="case-pair">
+        <figure class="before"><img src="assets/case-exterior-before.jpg" alt="外観施工前"><figcaption>Before</figcaption></figure>
+        <figure class="after"><img src="assets/case-exterior-after.jpg" alt="外観施工後"><figcaption>After</figcaption></figure>
+      </div>
+    </div>
+
+    <p class="section-lead" style="margin-top:56px;">些細なお悩みでもお気軽にご相談ください</p>
+    <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center">
+      <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+      資料請求・お問い合わせ
+    </a>
+  </div>
+</section>
+
+<!-- ========== これも全てリフォームです ========== -->
+<section class="also-reform section">
+  <div class="container">
+    <div class="also-reform__card">
+      <div class="also-reform__title"><span>これも全てリフォームです</span></div>
+      <div class="reform-grid">
+        <figure>
+          <img src="assets/reform-exterior.jpg" alt="長く住み続けたくなる住まいの外観">
+          <figcaption>長く住み続けたくなる住まいの外観</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/reform-living.jpg" alt="自然素材のぬくもりを感じるリビング">
+          <figcaption>家族みんなで、自然素材のぬくもりを感じるリビング</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/reform-kids.jpg" alt="快適に遊べる子供部屋づくり">
+          <figcaption>快適に遊べる子供部屋づくり</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/reform-kitchen.jpg" alt="日々の料理が楽しくなるキッチン">
+          <figcaption>日々の料理が楽しくなるキッチン</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/reform-bath.jpg" alt="毎日の入浴が楽しみになるバスルームへ">
+          <figcaption>毎日の入浴が楽しみになるバスルームへ</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/reform-cat.jpg" alt="ペットも快適に暮らせる住まいの工夫">
+          <figcaption>ペットも快適に暮らせる住まいの工夫</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+  <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center" style="margin-bottom:56px;">
+    <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+    資料請求・お問い合わせ
+  </a>
+</div>
+
+<!-- ========== プランと価格例 ========== -->
+<section id="plan" class="plan section" style="background:var(--color-tan-bg);">
+  <div class="container">
+    <h2 class="sec-title">プランと価格例</h2>
+
+    <div class="plan-grid">
+      <div class="plan-card">
+        <img class="icon" src="assets/icon-plan-water.png" alt="">
+        <h3>水回りリフォーム</h3>
+        <p class="price"><span class="num">150</span>万円(税込)〜</p>
+        <p class="desc">キッチン・お風呂・トイレなど、毎日使う水回りを快適にリフォーム。動線改善もできます。</p>
+        <div class="photo"><img src="assets/plan-water.jpg" alt="水回りリフォーム例"></div>
+        <p class="example">例：トイレ、キッチン、お風呂</p>
+      </div>
+      <div class="plan-card">
+        <img class="icon" src="assets/icon-plan-layout.png" alt="">
+        <h3>間取り変更</h3>
+        <p class="price"><span class="num">300</span>万円(税込)〜</p>
+        <p class="desc">家族構成や暮らしに合わせて生活動線を見直し、今の暮らしにフィットする空間へ。</p>
+        <div class="photo"><img src="assets/plan-layout.jpg" alt="間取り変更例"></div>
+        <p class="example">例：リビング、洋室、和室</p>
+      </div>
+      <div class="plan-card">
+        <img class="icon" src="assets/icon-plan-full.png" alt="">
+        <h3>フルリノベーション</h3>
+        <p class="price"><span class="num">1,000</span>万円(税込)〜</p>
+        <p class="desc">住まい全体を見直し、性能とデザインを一新し、これからの暮らしに合った住まいへ。</p>
+        <div class="photo"><img src="assets/plan-full.jpg" alt="フルリノベーション例"></div>
+        <p class="example">例：内装、外観</p>
+      </div>
+    </div>
+
+    <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+    <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center">
+      <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+      資料請求・お問い合わせ
+    </a>
+  </div>
+</section>
+
+<!-- ========== 補助金について ========== -->
+<section id="subsidy" class="subsidy section">
+  <div class="container">
+    <div class="grid">
+      <div class="illust"><img src="assets/illust-subsidy.png" alt="補助金のイメージ"></div>
+      <div>
+        <h2>補助金について</h2>
+        <p class="lead">リフォーム・リノベーションは今がチャンス！<br>国の補助制度により、工事内容によっては補助を受けられる場合があります！</p>
+        <p class="amount">補助金: <span class="num">最大<span class="num-lg">247</span>万円</span>/戸</p>
+        <a href="https://www.mlit.go.jp/" target="_blank" rel="noopener" class="btn-outline">国土交通省HPはこちら <span class="arrow">―――</span></a>
+        <div class="notes">
+          <p>※補助金の適用には条件があります。</p>
+          <p>※条件、施行内容によっては、補助を受けれない場合がございます。予めご了承くださいませ。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== お客様の声 ========== -->
+<section id="voice" class="voice section">
+  <div class="container">
+    <h2 class="sec-title">お客様の声</h2>
+
+    <div class="voice-item">
+      <div class="voice-item__media">
+        <div class="main"><img src="assets/voice-01-main.jpg" alt="お客様の声1 施工事例"></div>
+        <div class="sub"><img src="assets/voice-01-sub.jpg" alt="お客様の声1 施工事例サブ"></div>
+      </div>
+      <div class="voice-item__body">
+        <div class="voice-item__head">
+          <img src="assets/voice-avatar-01.png" alt="">
+          <span class="voice-tag">Voice01</span>
+        </div>
+        <h3>古民家風にしつつ、耐震改修で安心！</h3>
+        <p>新築かリノベーションかで悩んでいましたが、建物の状態を丁寧に見ていただき、耐震改修を行えば安心して住めると分かりリノベーションを選びました。もともとあった建物を解体し、広い土間のある玄関にしていただくなど、希望していた古民家風の雰囲気も実現。中古住宅の提案から物件探しまでスムーズに進み、想像以上の仕上がりにとても満足しています。新築では得られなかった魅力を感じています。</p>
+      </div>
+    </div>
+
+    <div class="voice-item voice-item--reverse">
+      <div class="voice-item__media">
+        <div class="main"><img src="assets/voice-02-main.jpg" alt="お客様の声2 施工事例"></div>
+        <div class="sub"><img src="assets/voice-02-sub.jpg" alt="お客様の声2 施工事例サブ"></div>
+      </div>
+      <div class="voice-item__body">
+        <div class="voice-item__head">
+          <img src="assets/voice-avatar-02.png" alt="">
+          <span class="voice-tag">Voice02</span>
+        </div>
+        <h3>家が新しく生まれ変わりました！</h3>
+        <p>建て替えを考えていましたが、木造建築の良さを活かせると提案いただきリノベーションを選びました。急で危険だった階段も安全で開放感のあるものに変わり、暮らしやすさが大きく向上しました。これまで受け継がれてきた梁や構造の雰囲気を残しながら、設備や明るさが加わり、まさに新旧の良さが共存する住まいに。思い出を残しながら快適に暮らせることにとても満足しています。</p>
+      </div>
+    </div>
+
+    <div class="voice-item">
+      <div class="voice-item__media">
+        <div class="main"><img src="assets/voice-03-main.jpg" alt="お客様の声3 施工事例"></div>
+        <div class="sub"><img src="assets/voice-03-sub.jpg" alt="お客様の声3 施工事例サブ"></div>
+      </div>
+      <div class="voice-item__body">
+        <div class="voice-item__head">
+          <img src="assets/voice-avatar-03.png" alt="">
+          <span class="voice-tag">Voice03</span>
+        </div>
+        <h3>築100年の家を活かしました！</h3>
+        <p>築100年以上の家をどのように活かすか悩んでいましたが、古民家の良さを残したままモダンに仕上げていただきました。広い2階空間はあえて仕切らず、開放的な空間として活用できるようにしたことで、家族や子どもたちがのびのび過ごせる場所になりました。外観も元の雰囲気を大切にしていただき、安心感と新しさのバランスにとても満足しています。</p>
+      </div>
+    </div>
+
+    <div class="voice-item voice-item--reverse">
+      <div class="voice-item__media">
+        <div class="main"><img src="assets/voice-04-main.jpg" alt="お客様の声4 施工事例"></div>
+        <div class="sub"><img src="assets/voice-04-sub.jpg" alt="お客様の声4 施工事例サブ"></div>
+      </div>
+      <div class="voice-item__body">
+        <div class="voice-item__head">
+          <img src="assets/voice-avatar-04.png" alt="">
+          <span class="voice-tag">Voice04</span>
+        </div>
+        <h3>荒れた古民家の再生ができました！</h3>
+        <p>荒れた状態だった古民家でしたが、できるだけ壊さず活かすリノベーションに魅力を感じ購入しました。柱や梁、土壁など、長い年月を経てきた素材を丁寧に残しながら、現代の暮らしに合うように整えていただきました。建具も補修して再利用し、住まいとしてだけでなくカフェやショールームとしても活用できる空間に。ここで過ごす時間そのものが価値になる、特別な場所になりました。</p>
+      </div>
+    </div>
+
+    <div class="final-cta">
+      <p class="section-lead">些細なお悩みでもお気軽にご相談ください</p>
+      <a href="https://www.kusadokoro.co.jp/inq" class="btn-cta btn-cta--center">
+        <img class="btn-cta__icon" src="assets/icon-cta.png" alt="">
+        資料請求・お問い合わせ
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== フッターCTA帯 ========== -->
+<section id="contact" class="footer-band">
+  <div class="container">
+    <div class="grid">
+      <p>
+        お子様の成長や、ライフスタイルの変化に合わせた<br>
+        リフォーム・リノベーションをご提案します。<br><br>
+        経験豊かな草処建設に是非お任せください。
+      </p>
+      <div class="right">
+        <a href="https://www.kusadokoro.co.jp/inq" class="btn-outline">資料請求・お問い合わせ <span class="arrow">―――</span></a>
+        <p class="tel">お電話でのお問い合わせ</p>
+        <a href="tel:0277741682" class="tel__num"><img class="tel-icon" src="assets/icon-tel.png" alt="">0277-74-1682</a>
+        <p class="tel">※受付時間 10:00〜17:00</p>
+      </div>
+    </div>
+  </div>
+  <a href="#top" class="top-btn">▲<br>TOPへ</a>
+</section>
+
+<!-- ========== フッター ========== -->
+<footer class="site-footer" id="top">
+  <div class="container">
+    <div class="top">
+      <div class="brand">
+        <img src="assets/logo-footer.png" alt="モックの家 ロゴ" class="brand__logo">
+        <div>
+          <span class="brand__name">モックの家 草処建設株式会社</span>
+        </div>
+      </div>
+      <address>
+        草処建設株式会社<br>
+        群馬県桐生市新里町新川171
+      </address>
+      <nav>
+        <ul>
+          <li><a href="#top">トップ</a></li>
+          <li><a href="#merit">メリット</a></li>
+          <li><a href="#case">施工事例</a></li>
+          <li><a href="#plan">プランと価格例</a></li>
+          <li><a href="#subsidy">補助金について</a></li>
+          <li><a href="#voice">お客様の声</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">© 2026 モックの家 草処建設株式会社 All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
